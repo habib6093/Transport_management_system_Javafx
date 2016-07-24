@@ -1,0 +1,12 @@
+.root {
+     -fx-background-image: url("back.jpg");
+     -fx-background-size:cover;
+     -fx-font-size:10px;
+}
+
+
+#button
+{
+      -fx-background-color:black;
+
+}
