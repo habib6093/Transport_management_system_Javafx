@@ -39,7 +39,7 @@ public class Hello extends Application {
      {  
      	StackPane root = new StackPane();
      	Scene scene = new Scene(root, 600, 250);
-     	scene.setResizable(false);
+    // 	scene.setResizable(false);
         Button btn = new Button("say what i'm saying ....");
         File f = new File("style.css");
        scene.getStylesheets().clear();
