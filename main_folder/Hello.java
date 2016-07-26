@@ -32,7 +32,7 @@ public class Hello extends Application
       public void start(Stage stage_ob)
       {
         StackPane root = new StackPane();
-      	Scene scene = new Scene(root, 600, 250);
+      	Scene scene = new Scene(root,1280, 720);
       	
       	
       	
