@@ -83,7 +83,7 @@ public class Login extends Application
         root.getChildren().add(login);
         root.getChildren().add(cancel);
 
-        login.setTranslateX(-30);
+        login.setTranslateX(-40);
         login.setTranslateY(130);
 
         cancel.setTranslateX(60);
