@@ -10,20 +10,21 @@ public class AddRoute extends Application {
     public static void main(String args[]){
         launch(args);
     }
-    
+        
+
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent root;
+    public void start(Stage primaryStage) throws Exception {        
+	Parent root;
         root = FXMLLoader.load(getClass().getResource("route.fxml"));
         Scene scene = new Scene(root,1280,720);
-        scene.getStylesheets().add(getClass().getResource("app.css").toExternalForm());
-
+        
+	
+	scene.getStylesheets().add(getClass().getResource("app.css").toExternalForm());
 	primaryStage.setMaxWidth(1280);        
-    	primaryStage.setMaxHeight(720);
+    primaryStage.setMaxHeight(720);
 	primaryStage.setResizable(false);
 
-        primaryStage.setScene(scene);
-   	//primaryStage.setFullScreen(true);  
+    primaryStage.setScene(scene); 
 	primaryStage.show();	
     }
 	/*Button btnscene1,btnscene2;

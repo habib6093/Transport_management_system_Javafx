@@ -2,18 +2,21 @@
     -fx-background-color: #00c6ff;
 }
 
+.root {
+    -fx-background-color: #00c6ff;
+}
+
+
 .label {
-    -fx-font-size: 11pt;
+    -fx-font-size: 20pt bold;
     -fx-font-family: "Segoe UI Semibold";
-    -fx-text-fill: white;
-    -fx-opacity: 0.6;
+    -fx-text-fill: #F5F5F5;
 }
 
 .label-bright {
-    -fx-font-size: 11pt;
+    -fx-font-size: 20pt;
     -fx-font-family: "Segoe UI Semibold";
-    -fx-text-fill: white;
-    -fx-opacity: 1;
+    -fx-text-fill: #F5F5F5;
 }
 
 .label-header {
@@ -27,8 +30,6 @@
     -fx-base: #00c6ff;
     -fx-control-inner-background: #00c6ff;
     -fx-background-color: #00c6ff;
-    -fx-table-cell-border-color: white;
-    -fx-table-header-border-color: white;
     -fx-padding: 5;
 }
 
@@ -54,6 +55,7 @@
 
 .table-view:focused .table-row-cell:filled:focused:selected {
     -fx-background-color: -fx-focus-color;
+    -fx-font-weight: bold;
 }
 
 .split-pane:horizontal > .split-pane-divider {
@@ -112,14 +114,6 @@
   -fx-text-fill: #1d1d1d;
 }
 
-.button:focused {
-    -fx-border-color: white, white;
-    -fx-border-width: 1, 1;
-    -fx-border-style: solid, segments(1, 1);
-    -fx-border-radius: 0, 0;
-    -fx-border-insets: 1 1 1 1, 0;
-}
-
 .button:disabled, .button:default:disabled {
     -fx-opacity: 0.4;
     -fx-background-color: #1d1d1d;
@@ -135,19 +129,65 @@
     -fx-background-color: derive(-fx-focus-color,30%);
 }
 
+#submit {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #F5F5F5;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #00c6ff;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 15pt bold;
+    -fx-text-fill: white;    	
+}
 
-
-
-
-//////////////login css//////
-#loginroot{
-   -fx-background-color: #00c6ff;
-    -fx-color:green;
+#submit:hover {
+    -fx-background-color: #F5F5F5;	
+    -fx-text-fill: #00c6ff;	
 }
 
 
-#logintext{
-	-fx-font-size:30px;
+#A1, #A2, #A3, #A4, #B1, #B2, #B3, #B4, #C1, #C2, #C3, #C4, #D1, #D2,#D3,#D4,#E1,#E2,#E3,#E4, #F1,#F2,#F3,#F4, #G1, #G2, #G3, #G4, #H1,#H2,#H3,#H4 {
+    /*-fx-background-image: url("img/chair.png") no-repeat top left;
+    padding-left: 16px;
+    height: 16px; */
+    -fx-padding: 2 5 2 5;   
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #32CD32;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 8pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+
 }
 
-/////////////
+
+#A1:disabled, #A2:disabled, #A3:disabled, #A4:disabled, #B1:disabled, #B2:disabled, #B3:disabled, #B4:disabled, #C1:disabled, #C2:disabled, #C3:disabled, #C4:disabled, #D1:disabled, #D2:disabled,#D3:disabled,#D5:disabled, #F1:disabled,#F2:disabled,#F3:disabled,#F4:disabled, #G1:disabled, #G2:disabled, #G3:disabled, #G4:disabled, #H1:disabled,#H2:disabled,#H3:disabled,#H4:disabled  {
+    -fx-background-color: #red;
+    -fx-text-fill: white;
+}
+
+#A1:hover, #A2:hover, #A3:hover, #A4:hover, #B1:hover, #B2:hover, #B3:hover, #B4:hover, #C1:hover, #C2:hover, #C3:hover, #C4:hover, #D1:hover, #D2:hover,#D3:hover,#D5:hover, #F1:hover,#F2:hover,#F3:hover,#F4:hover, #G1:hover, #G2:hover, #G3:hover, #G4:hover, #H1:hover,#H2:hover,#H3:hover,#H4:hover  {
+    -fx-background-color: white;
+    -fx-text-fill: #00c6ff;
+}
+
+
+#combo {
+	
+}
+
+#message {
+   -fx-text-fill: red; 
+   -fx-font-size: 12pt;
+   -fx-font-weight: bold;		  	
+}
+
+#success {
+   -fx-text-fill: #90EE90; 
+   -fx-font-size: 12pt;
+   -fx-font-weight: bold;		  	
+}
+

@@ -4,30 +4,21 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="@app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addRouteController">
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="@app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuBar prefHeight="33.0" prefWidth="1280.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-      <Button layoutY="33.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="165.0" text="Add Route" />
-      <Button layoutX="154.0" layoutY="33.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="165.0" text="Ticket" />
-      <Button layoutX="319.0" layoutY="33.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="165.0" text="Admins" />
-   </children>
+      <Button fx:id="add" layoutX="1.0" layoutY="2.0" mnemonicParsing="false" onAction="#Routing" prefHeight="75.0" prefWidth="165.0" text="Routes" />
+      <Button fx:id="ticket" layoutX="154.0" layoutY="2.0" mnemonicParsing="false" onAction="#Routing" prefHeight="75.0" prefWidth="165.0" text="Ticket" />
+      <Button fx:id="admin" layoutX="319.0" layoutY="2.0" mnemonicParsing="false" onAction="#Routing" prefHeight="75.0" prefWidth="165.0" text="Admins" />
+      <TextField fx:id="from" layoutX="319.0" layoutY="272.0" prefHeight="32.0" prefWidth="533.0" promptText="From" />
+      <TextField fx:id="to" layoutX="319.0" layoutY="217.0" prefHeight="32.0" prefWidth="533.0" promptText="To" />
+      <TextField fx:id="fare" layoutX="319.0" layoutY="328.0" prefHeight="32.0" prefWidth="533.0" promptText="Fare" />
+      <TextField fx:id="seats" layoutX="319.0" layoutY="388.0" prefHeight="32.0" prefWidth="533.0" promptText="No of available seats" />
+      <ComboBox fx:id="combo" layoutX="319.0" layoutY="456.0" onAction="#formSubmission" prefHeight="33.0" prefWidth="301.0" promptText="Select timing pattern" />
+      <Label layoutX="319.0" layoutY="116.0" prefHeight="89.0" prefWidth="277.0" text="Add a new route" />
+      <Button fx:id="submit" layoutX="711.0" layoutY="571.0" mnemonicParsing="false" onAction="#formSubmission" prefHeight="44.0" prefWidth="142.0" text="Submit" />
+      <Label fx:id="message" layoutX="319.0" layoutY="523.0" prefHeight="33.0" prefWidth="301.0" />
+      <Label fx:id="success" layoutX="319.0" layoutY="516.0" prefHeight="33.0" prefWidth="301.0" />
+   
+</children>
 </AnchorPane>
