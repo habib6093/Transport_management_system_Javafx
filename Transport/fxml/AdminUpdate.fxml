@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="css/app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminUpdate">
+   <children>
+      <Button fx:id="home" layoutY="2.0" mnemonicParsing="false" onAction="#Routing" prefHeight="77.0" prefWidth="163.0" text="Home" />
+
+      <Label layoutX="381.0" layoutY="118.0" prefHeight="36.0" prefWidth="283.0" text="Update Admin" />
+      <TextField fx:id="getname" layoutX="381.0" layoutY="199.0" prefHeight="42.0" prefWidth="610.0" promptText="Name" />
+      <Label layoutX="300.0" layoutY="199.0" prefHeight="36.0" prefWidth="283.0" text="Name" />
+
+
+      <TextField fx:id="getaddress" layoutX="381.0" layoutY="269.0" prefHeight="42.0" prefWidth="610.0" promptText="Address" />
+      <Label layoutX="270.0" layoutY="269.0" prefHeight="36.0" prefWidth="283.0" text="Address" />
+
+
+      <TextField fx:id="getPhone" layoutX="381.0" layoutY="335.0" prefHeight="42.0" prefWidth="610.0" promptText="Phone" />
+      <Label layoutX="295.0" layoutY="335.0" prefHeight="36.0" prefWidth="283.0" text="Phone" />
+
+      
+      <Button fx:id="update" layoutX="866.0" layoutY="410.0" mnemonicParsing="false" onAction="#formSubmission" prefHeight="58.0" prefWidth="125.0" text="Update" />
+      <Button fx:id="discard" layoutX="710.0" layoutY="410.0" mnemonicParsing="false" onAction="#formSubmission" prefHeight="58.0" prefWidth="125.0" text="Discard" />
+
+      <Button fx:id="delete" layoutX="381.0" layoutY="410.0" mnemonicParsing="false" onAction="#formSubmission" prefHeight="58.0" prefWidth="125.0" text="Delete" />
+
+   </children>
+
+</AnchorPane>

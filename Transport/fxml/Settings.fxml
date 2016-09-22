@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="css/app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingsController">
+
+	<children>
+		<Label fx:id="admin" layoutX="338.0" layoutY="118.0" prefHeight="36.0" prefWidth="274.0" text="dadadaa" />
+
+		<Button fx:id="home" layoutY="2.0" mnemonicParsing="false" onAction="#Routing" prefHeight="77.0" prefWidth="163.0" text="Home" />
+		<Label layoutX="338.0" layoutY="168.0" prefHeight="36.0" prefWidth="274.0" text="Change Password" />
+		
+		<PasswordField fx:id="previous" layoutX="334.0" layoutY="226.0" prefHeight="47.0" prefWidth="453.0" promptText="Previous password " />
+
+		<PasswordField fx:id="password" layoutX="335.0" layoutY="293.0" prefHeight="47.0" prefWidth="453.0" promptText="New password " />
+		
+		<PasswordField fx:id="confirm" layoutX="334.0" layoutY="370.0" prefHeight="47.0" prefWidth="453.0" promptText="Confirm New password " />
+		
+
+		<Button fx:id="submit" layoutX="638.0" layoutY="460.0" mnemonicParsing="false" onAction="#check" prefHeight="48.0" prefWidth="146.0" text="Submit" />
+		<Button fx:id="cancel" layoutX="440.0" layoutY="460.0" mnemonicParsing="false" prefHeight="48.0" onAction="#Routing" prefWidth="146.0" text="Cancel" />
+		
+	</children>
+
+
+</AnchorPane>

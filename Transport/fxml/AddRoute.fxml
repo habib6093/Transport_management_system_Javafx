@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="css/app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addRouteController">
+
+ <children>
+  <Button fx:id="home" layoutX="1.0" layoutY="2.0" mnemonicParsing="false" onAction="#Routing" prefHeight="75.0" prefWidth="165.0" text="Home" />
+
+  <Label layoutX="916.0" layoutY="118.0" prefHeight="89.0" prefWidth="277.0" text="Add a new route" />
+  
+  <TextField fx:id="search" layoutX="520.0" layoutY="118.0" prefHeight="38.0" prefWidth="280.0" promptText="Search Route" />
+
+  <Label layoutX="205.0" layoutY="110.0" prefHeight="33.0" prefWidth="319.0" text="Available routes " />
+  
+  <TextField fx:id="getfrom" layoutX="916.0" layoutY="272.0" prefHeight="32.0" prefWidth="337.0" promptText="From" />
+  <TextField fx:id="getto" layoutX="917.0" layoutY="217.0" prefHeight="32.0" prefWidth="329.0" promptText="To" />
+
+  <Button fx:id="submit" layoutX="1107.0" layoutY="392.0" mnemonicParsing="false" onAction="#formSubmission" prefHeight="44.0" prefWidth="142.0" text="Submit" />
+  <Label fx:id="message" layoutX="319.0" layoutY="523.0" prefHeight="33.0" prefWidth="301.0" />
+  <Label fx:id="success" layoutX="319.0" layoutY="516.0" prefHeight="33.0" prefWidth="301.0" />
+
+  <TableView fx:id="table" layoutX="48.0" layoutY="157.0" prefHeight="525.0" prefWidth="778.0">
+    <columns>
+      <TableColumn fx:id="to" prefWidth="200.0" text="To" />
+      <TableColumn fx:id="from" prefWidth="200.0" text="From" />
+      <TableColumn fx:id="trips" prefWidth="200.0" text="Number of trips" />
+      <TableColumn fx:id="earnings" prefWidth="170.0" text="Earnings" />
+    </columns>
+  </TableView>
+
+
+  <Label fx:id="message" layoutX="916.0" layoutY="327.0" prefHeight="33.0" prefWidth="277.0" />
+  <Label fx:id="success" layoutX="917.0" layoutY="337.0" prefHeight="33.0" prefWidth="286.0" />
+
+</children>
+</AnchorPane>

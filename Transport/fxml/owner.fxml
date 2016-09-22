@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="css/app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.owner">
+	<children>
+		<Button fx:id="home" layoutY="2.0" mnemonicParsing="false" onAction="#Routing" prefHeight="77.0" prefWidth="163.0" text="home" />
+
+		<Label layoutX="450.0" layoutY="118.0" prefHeight="36.0" prefWidth="283.0" text="Statistics" />
+
+		<Label fx:id="stat" layoutX="400.0" layoutY="218.0" prefHeight="36.0" prefWidth="283.0" text="Total Revenue: " />
+		<Label fx:id="revenue" layoutX="600.0" layoutY="218.0" prefHeight="36.0" prefWidth="283.0" text="Total Revenue: " />
+
+		<Label fx:id="stat" layoutX="400.0" layoutY="270.0" prefHeight="36.0" prefWidth="283.0" text="Total Number of buses:" />
+		<Label fx:id="bus" layoutX="600.0" layoutY="270.0" prefHeight="36.0" prefWidth="283.0" text="Total bus: " />
+
+
+		<Label fx:id="stat" layoutX="400.0" layoutY="320.0" prefHeight="36.0" prefWidth="283.0" text="Total number of routes: " />
+		<Label fx:id="route" layoutX="600.0" layoutY="320.0" prefHeight="36.0" prefWidth="283.0" text="Total Revenue: " />
+
+		<Label fx:id="stat" layoutX="400.0" layoutY="370.0" prefHeight="36.0" prefWidth="283.0" text="Total Number of schedules: " />
+		<Label fx:id="schedule" layoutX="600.0" layoutY="370.0" prefHeight="36.0" prefWidth="283.0" text="Total Revenue: " />
+
+		<Label fx:id="stat" layoutX="400.0" layoutY="420.0" prefHeight="36.0" prefWidth="283.0" text="Total Trips: " />
+		<Label fx:id="trips" layoutX="600.0" layoutY="420.0" prefHeight="36.0" prefWidth="283.0" text="Total Revenue: " />
+		
+
+	</children>
+
+</AnchorPane>

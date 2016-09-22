@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="css/app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BusUpdate">
+	<children>
+		<Button fx:id="home" layoutY="2.0" mnemonicParsing="false" onAction="#Routing" prefHeight="77.0" prefWidth="163.0" text="Home" />
+
+		<Label layoutX="381.0" layoutY="118.0" prefHeight="36.0" prefWidth="283.0" text="Update Bus" />
+		<TextField fx:id="name" layoutX="381.0" layoutY="199.0" prefHeight="42.0" prefWidth="610.0" promptText="Name" />
+		<Label layoutX="240" layoutY="200" prefHeight="10" prefWidth="240" text="Bus Name" />
+
+		<TextField fx:id="reg" layoutX="381.0" layoutY="269.0" prefHeight="42.0" prefWidth="610.0" promptText="Registration" />
+		<Label layoutX="290" layoutY="270" prefHeight="10" prefWidth="240" text="Bus Id" />
+
+
+		<Button fx:id="update" layoutX="866.0" layoutY="346.0" mnemonicParsing="false" onAction="#formSubmission" prefHeight="58.0" prefWidth="125.0" text="Update" />
+		<Button fx:id="discard" layoutX="710.0" layoutY="346.0" mnemonicParsing="false" onAction="#formSubmission" prefHeight="58.0" prefWidth="125.0" text="Discard" />
+
+		<Button fx:id="delete" layoutX="381.0" layoutY="346.0" mnemonicParsing="false" onAction="#formSubmission" prefHeight="58.0" prefWidth="125.0" text="Delete" />
+
+	</children>
+
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="css/app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.busController">
+ <children>
+  <Button fx:id="home" layoutY="2.0" mnemonicParsing="false" onAction="#Routing" prefHeight="77.0" prefWidth="163.0" text="Home" />
+  <Label layoutX="180.0" layoutY="118.0" prefHeight="36.0" prefWidth="231.0" text="Available Buses " />
+
+  <TextField fx:id="search" layoutX="450.0" layoutY="118.0" prefHeight="38.0" prefWidth="280.0" promptText="Search bus" />
+
+  <TableView fx:id="table" layoutX="18.0" layoutY="170.0" prefHeight="539.0" prefWidth="744.0">
+    <columns>
+      <TableColumn fx:id="name" prefWidth="170.0" text="Bus Name" />
+      <TableColumn fx:id="reg" minWidth="0.0" prefWidth="121.0" text="Bus ID" />
+      <TableColumn fx:id="trips" prefWidth="196.0" text="No of Trips " />
+      <TableColumn fx:id="earning" prefWidth="234.0" text="Total Earning" />
+    </columns>
+  </TableView>
+  <Label layoutX="936.0" layoutY="118.0" prefHeight="36.0" prefWidth="231.0" text="Add new Bus" />
+  
+  <TextField fx:id="getName" layoutX="881.0" layoutY="199.0" prefHeight="38.0" prefWidth="310.0" promptText="Name" />
+  <TextField fx:id="getModel" layoutX="881.0" layoutY="273.0" prefHeight="38.0" prefWidth="310.0" promptText="Registration ID" />
+
+  <Button fx:id="submit" layoutX="1064.0" layoutY="374.0" mnemonicParsing="false" onAction="#formSubmission" prefHeight="44.0" prefWidth="142.0" text="Submit" />
+</children>
+</AnchorPane>
