@@ -1,5 +1,5 @@
 			Transportation management system
-Here is a short summary of our project plan. 
+Here is a short summary of our project plan. .
 
 Features for Customers or passengers: 
  1. Users can book and buy tickets using an online app.
